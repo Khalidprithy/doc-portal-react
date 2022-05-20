@@ -10,6 +10,7 @@ import Login from './components/LoginAuth/Login/Login';
 import Review from './components/Pages/Reviews/Review';
 import SignUp from './components/LoginAuth/SignUp/SignUp';
 import RequireAuth from './components/LoginAuth/RequireAuth';
+import { ToastContainer } from 'react-toastify';
 function App() {
   return (
     <div className='max-w-7xl mx-auto'>
@@ -26,6 +27,7 @@ function App() {
         <Route path='/login' element={<Login></Login>} ></Route>
         <Route path='/signup' element={<SignUp></SignUp>} ></Route>
       </Routes>
+      <ToastContainer />
     </div>
   );
 }
